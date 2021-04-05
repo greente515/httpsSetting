@@ -1,6 +1,11 @@
 spring:
   profiles:
-    active: local #로컬 환경에서만 사
+    active: local #로컬 환경에서만 사용
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:
 server:
   ssl: #HTTPS 설정
     key-store: keystore.p12
