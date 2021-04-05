@@ -1,0 +1,9 @@
+server:
+  ssl: #HTTPS 설정
+    key-store: keystore.p12
+    key-store-type: PKCS12
+    key-store-password: authtest
+    key-alias: spring
+  port: 8443
+  http2:
+    enabled: true #HTTP2 활성화 - JDK 9 version 이상 필요
